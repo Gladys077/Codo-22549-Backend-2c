@@ -85,7 +85,7 @@ public class Persona {
 		return otrosIdiomas;
 	}
 	
-	//alt+shit+s
+	//alt+shit+s Generate Getters (obtner un valor) and Setters (modificar valor)
 	
 }
 
