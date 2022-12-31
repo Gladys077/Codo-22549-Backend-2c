@@ -1,7 +1,7 @@
 package ar.com.codoacodo.buscador;
 
 public class Articulo {
-
+	
 	//atributos
 	private String img;
 	private String titulo;
@@ -10,16 +10,16 @@ public class Articulo {
 	
 	//constructores
 	public Articulo() {
-		
+	
 	}
 	
 	//metodos
 	public void detalle() {
 		//mostrar por consola los datos
 		System.out.println("Imagen: " + img);
-		System.err.println("Titulo: " + titulo);
-		System.err.println("Autor: " + autor);
-		System.err.println("Precio: " + precio);
-
+		System.out.println("Titulo: " + titulo);
+		System.out.println("Autor: " + autor);
+		System.out.println("Precio: " + precio);
 	}
+	
 }
