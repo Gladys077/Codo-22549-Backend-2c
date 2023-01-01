@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="<%=request.getContextPath()%>">Navbar</a>
+    <a class="navbar-brand" href="<%=request.getContextPath()%>">Codo A Codo</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -18,14 +18,13 @@
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Trabajos CodoACodo
+            Trabajos
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">HTML</a></li>
-            <li><a class="dropdown-item" href="#">JS</a></li>
+            <li><a class="dropdown-item" href="https://gladys077.github.io/">Html/Css/Js/</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">BOOTSTRAP</a></li>
-            <li><a class="dropdown-item" href="#">DB</a></li>
+            <li><a class="dropdown-item" href="bootstrap.html">Bootstrap</a></li>
+            <li><a class="dropdown-item" href="DB.html">Base de datos</a></li>
           </ul>
         </li>
       </ul>
