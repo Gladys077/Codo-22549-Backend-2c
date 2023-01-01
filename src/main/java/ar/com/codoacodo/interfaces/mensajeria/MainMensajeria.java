@@ -1,22 +1,25 @@
+//este main va a invocar los metodos de la clase Mensajeria
 package ar.com.codoacodo.interfaces.mensajeria;
 
 public class MainMensajeria {
 
 	public static void main(String[] args) {
 		String target = "C";
-		String mensaje = "Aprendiendo interfaces en java;"
+		String mensaje = "aprendiendo interfaces en java";
 		
-		var mensajero = new Mensajero();
+		//instanciamos la clase Mensajeria creada
+		var mensajeria = new Mensajeria();
 		
+		//switch para evitar el uso del If
 		switch (target) {
-			case "A":
-				mensajero.setMensajeria(new EnviarMail());
-				break;
+			case "A": 
+				mensajeria.enviarMail(mensaje);//pedimos a la clase que invoque los metodos creados
+				break; 
 			case "B":
-				mensajero.setMensajeria(new EnviarHD());
+				mensajeria.enviarHD(mensaje);
 				break;
 			case "C":
-				mensajero.setMensajeria(new EnviarADB());
+				mensajeria.enviarADB(mensaje);
 				break;
 		default:
 			System.out.println("OPCION INVALIDA");
