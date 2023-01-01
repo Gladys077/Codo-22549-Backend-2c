@@ -1,0 +1,15 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+section, form {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.card-img-top {
+    height: 220px;
+}
+.card-footer {
+    background: none; 
+    border-top: 0;
+}
