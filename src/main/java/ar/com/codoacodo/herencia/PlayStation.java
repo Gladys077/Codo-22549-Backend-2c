@@ -1,43 +1,46 @@
 package ar.com.codoacodo.herencia;
 
+//ctrl+shift+o sirve para arreglar los import
+//el import enlaza clases, metodos, interfaces...... entre diferentes paquetes
 import ar.com.codoacodo.herencia.interfaces.IActualizable;
 import ar.com.codoacodo.herencia.interfaces.IJugable;
 
 /**
  * 	play 1 = 32
 	play 2 = 128
-	play3 = 512
-	play 4 = 1024
- * @author LopezCar
+	play 3 = 512
+	play 4 = 1024 
  *
  */
-//PODEMOS HEREDAR DE UNA SOLA CLASE
-//PODEMOS IMPLEMENTAR VARIAS INTERFACES
-public class PlayStation extends Consola implements IActualizable, IJugable {
 
+//podemos heredar de una sola clase
+//podemos implementar varias interfaces
+public class PlayStation extends Consola implements IActualizable, IJugable {
+	//agrego un atributo, luego creo el parametro
 	private Integer version;
 
-	public PlayStation(Integer bit,Integer version) {
+	public PlayStation(Integer bit,Integer version) {//debo pasar el nuevo parametro en el constructor
+													//el Integer bit lo paso porque ese parametro va a variar segun la version
 
-		super("PayStation", bit, "Sony");
-		this.version = version;
+		super("PlayStation", bit, "Sony");
+		this.version = version;//agrego el parametro del nuevo atributo
 	}
 
-	//alt+shit+s
+	//alt+shift+s para crear un getter para la version
 	public Integer getVersion() {
 		return version;
 	}
 
-	//ALT+SIHT+S
+	//ALT+Shift+S para sobreescribor el toString ya que tenemos un nuevo atributo
 	public String toString() {
-		String toStringDelPadre = super.toString(); 
-		String toStringDeHijo = "PlayStation [version=" + version + "]";
-		return toStringDelPadre + toStringDeHijo;
+		String toStringDelPadre = super.toString(); //le decimos al padre que muestre sus atributos y lo guardamos en una variable
+		String toStringDeHijo = "PlayStation [version=" + version + "]";//le decimos al hijo que muestre sus atributos y lo guardamos en una variable
+		return toStringDelPadre + toStringDeHijo; //hacemos que retorne la info de ambas
 	}
-
+	
 	public void actualizar() {
 		if(this.version == 3) {
-			System.out.println("actualiznado play " + this.version);
+			System.out.println("actualizando play " + this.version);
 			System.out.println("conectando al servidor de sony");
 			System.out.println("descargando nuevo software");
 		}else {
@@ -50,6 +53,5 @@ public class PlayStation extends Consola implements IActualizable, IJugable {
 		System.out.println("Cargando juegos del HD");
 		System.out.println("Todo listo seleccione juego");
 	}
-	
-	
+		
 }
