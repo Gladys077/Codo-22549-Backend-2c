@@ -1,0 +1,24 @@
+body {
+    margin: 25px;
+	background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(91,236,178,1) 52%, rgba(0,212,255,1) 100%);
+}
+
+.navbar {
+    border-radius: 10px;
+    background: #ffe2c4;
+}
+
+.container{
+    justify-content: center;
+    border: 4px solid blue;
+    text-align: center;
+    margin: 20px 20px 20px 40px;
+    padding: 60px;    
+	background:#adf682;
+}
+
+.ajuste {
+	width: 100%;
+	object-fit: cover;
+}
+
