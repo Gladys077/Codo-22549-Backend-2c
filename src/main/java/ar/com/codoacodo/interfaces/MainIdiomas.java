@@ -5,14 +5,21 @@ public class MainIdiomas {
 	public static void main(String[] args) {
 		
 		//nace la persona
-		var persona = new Persona("carlos","español");
-
-		persona.decir("hola","portuñol");
+		//Persona persona = new Persona()//el var en este 
+		//caso reemplaza Persona para evitar la redundancia
+		var persona = new Persona("carlos","espa�ol");
 		
-		persona.aprender("portuñol");//f5
+		System.out.println(persona.getIdioma());
+			
+		persona.decir("hola");
 		
-		persona.decir("hola","portuñol");
+		persona.decir("hola","espa�ol");
+		
+		persona.decir("hola","portu�ol");
+			
+		persona.aprender("portu�ol");//f5
+		
+		persona.decir("hola","portu�ol");
 	}
 
 }
-
